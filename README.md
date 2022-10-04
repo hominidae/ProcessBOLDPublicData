@@ -30,23 +30,24 @@ E.g. Enter "Sciurus carolinensis" to perform a search for observations for Easte
 
 Select the species or text string that you're interesetd in, then click the "Occurences" button. There'll be a Download option on that new page. You will need to be signed in to GBIF, but you'll have the option to select the download type as well. Select the "Simple" option as it'll also be a TSV.
 
-The 001_FixData.R script will illustrate how to fix that GBIF data.
+The 001_FixData.R script will illustrate how to fix that GBIF data since you will only want human observations. Those are sourced from iNaturalist. Some public DNA barcoding data has found it's way into GBIF as well, so it needs to be filtered out.
 
-## Use of the ggmap Google Maps API
+## Use of the ggmap library and the Google Maps API
 
-The use of the Google Maps API is free, but you will need to utilize your Google account and enable access.
+The use of the Google Maps API is free, but you will need to utilize your Google account and enable access to RStudio with an API key.
 
-There is an excellent tutorial available here: https://www.littlemissdata.com/blog/maps
+There is an excellent tutorial on ggmap that is available here: https://www.littlemissdata.com/blog/maps
 
-## Step 1: Visit the Google Cloud service page and login
+### Step 1: Visit the Google Cloud service page and login
 https://console.cloud.google.com 
 
-## Step 2: Add maps static API and get your API key
+### Step 2: Add maps static API and get your API key
 Follow the instructions for setting up the Maps API on the tutorial
 
-## Step 3: Install the ggmap package and register your API key within R
+### Step 3: Install the ggmap package and register your API key within R
 ggmap::register_google(key = "SET YOUR KEY HERE") <-- That's where your API key goes
 
-## Step 4: Perform mapping with these scripts
-From 001 to 003, 
-Peruse the 004_MapData.R script to map point data
+### Step 4: Perform mapping with these scripts
+From 001 to 003, in the scripts do with you data what you'd like.
+
+But peruse/edit the 004_MapData.R script afterwards to perform the mapping of those absence data points using GPS coordinates if available after removing any NA's.
