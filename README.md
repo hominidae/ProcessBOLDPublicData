@@ -10,6 +10,10 @@ Simply go to BOLD Public data portal here: https://www.boldsystems.org/index.php
 
 Enter a search term like "Nunavut, Canada" and it'll return any matching record with that text anywhere in it.
 
+You can also select the data to download by species.
+
+E.g. Enter "Sciurus carolinensis" to perform a search for DNA barcodes for Eastern Grey Squirrels
+
 Once the search has been performed, there are buttons on the right where you can choose to download a Specimens, sequences, or combined as a TSV or tab spaced value text file.
 
 The other data source is from the Global Biodiversity Information Facility. GBIF has data from two sources, some from BOLD and the remainder from iNaturalist.
