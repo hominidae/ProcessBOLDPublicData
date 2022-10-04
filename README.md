@@ -12,7 +12,7 @@ Enter a search term like "Nunavut, Canada" and it'll return any matching record 
 
 You can also select the data to download by species.
 
-E.g. Enter "Sciurus carolinensis" to perform a search for DNA barcodes for Eastern Grey Squirrels
+E.g. Enter "Sciurus carolinensis" to perform a search for DNA barcodes for Eastern Grey Squirrels, or just "Sciuridae" for Squirrels.
 
 Once the search has been performed, there are buttons on the right where you can choose to download a Specimens, sequences, or combined as a TSV or tab spaced value text file.
 
