@@ -4,6 +4,8 @@ This repository contains the code written to process DNA barcoding data from the
 
 ## Notes on data sources:
 
+### BOLD Public Data portal search data download
+
 These scripts are looking at data downloaded directly from the BOLD public web interface
 
 Simply go to BOLD Public data portal here: https://www.boldsystems.org/index.php/Public_BINSearch?searchtype=records
@@ -16,9 +18,19 @@ E.g. Enter "Sciurus carolinensis" to perform a search for DNA barcodes for Easte
 
 Once the search has been performed, there are buttons on the right where you can choose to download a Specimens, sequences, or combined as a TSV or tab spaced value text file.
 
+## Global Biodiversity Information Facility search data download
+
 The other data source is from the Global Biodiversity Information Facility. GBIF has data from two sources, some from BOLD and the remainder from iNaturalist.
 
-As part of that, to avoid cross contamination the script removes any data from BOLD within the GBIF data.
+As part of that, to avoid cross contamination the 001_FixData.R script removes any data that might be sourced from BOLD within the GBIF data and retains human observations only.
+
+Simply go to the GBIF search page here: https://www.gbif.org/species/search
+
+E.g. Enter "Sciurus carolinensis" to perform a search for observations for Eastern Grey Squirrels, or just "Sciuridae" for Squirrels.
+
+Select the species or text string that you're interesetd in, then click the "Occurences" button. There'll be a Download option on that new page. You will need to be signed in to GBIF, but you'll have the option to select the download type as well. Select the "Simple" option.
+
+The 001_FixData.R script will illustrate how to fix that GBIF data.
 
 ## Use of the ggmap Google Maps API
 
