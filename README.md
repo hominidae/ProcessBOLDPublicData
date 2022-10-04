@@ -16,7 +16,7 @@ You can also select the data to download by species.
 
 E.g. Enter "Sciurus carolinensis" to perform a search for DNA barcodes for Eastern Grey Squirrels, or just "Sciuridae" for Squirrels.
 
-Once the search has been performed, there are buttons on the right where you can choose to download a Specimens, sequences, or combined as a TSV or tab spaced value text file.
+Once the search has been performed, there are buttons on the right where you can choose to download Specimens, sequences, or combined data as a TSV file.
 
 ## Global Biodiversity Information Facility search data download
 
@@ -28,7 +28,7 @@ Simply go to the GBIF search page here: https://www.gbif.org/species/search
 
 E.g. Enter "Sciurus carolinensis" to perform a search for observations for Eastern Grey Squirrels, or just "Sciuridae" for Squirrels.
 
-Select the species or text string that you're interesetd in, then click the "Occurences" button. There'll be a Download option on that new page. You will need to be signed in to GBIF, but you'll have the option to select the download type as well. Select the "Simple" option.
+Select the species or text string that you're interesetd in, then click the "Occurences" button. There'll be a Download option on that new page. You will need to be signed in to GBIF, but you'll have the option to select the download type as well. Select the "Simple" option as it'll also be a TSV.
 
 The 001_FixData.R script will illustrate how to fix that GBIF data.
 
