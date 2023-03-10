@@ -4,18 +4,18 @@
 library(tidyverse)
 
 # Load the Public BOLD data sets ###
-britishcolumbia_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/001_British_Columbia_2022_10_11.txt")
-alberta_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/002_Alberta_October_11_2022.txt")
-saskatchewan_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/003_Saskatchewan_2022_10_11.txt")
-manitoba_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/004_Manitoba_2022_10_11.txt")
-ontario_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/005_Ontario_2022_10_15.txt")
-quebec_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/006_Quebec_2022_10_14.txt")
-newbrunswick_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/007_NewBrunswick_2022_10_14.txt")
-novascotia_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/008_Nova_Scotia_2022_10_15.txt")
-newflab_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/009_Newfoundland_Labradour_2022_10_15.txt")
-yukon_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/010_Yukon_2022_10_15.txt")
-nwt_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/011_NWT_2022_10_15.txt")
-nunavut_data <- read_tsv("D:/R/ProcessBOLDPublicData/data/012_Nunavut_2022_10_15.txt")
+britishcolumbia_data <- read_tsv("data/001_British_Columbia_2022_10_11.txt")
+alberta_data <- read_tsv("data/002_Alberta_October_11_2022.txt")
+saskatchewan_data <- read_tsv("data/003_Saskatchewan_2022_10_11.txt")
+manitoba_data <- read_tsv("data/004_Manitoba_2022_10_11.txt")
+ontario_data <- read_tsv("data/005_Ontario_2022_10_15.txt")
+quebec_data <- read_tsv("data/006_Quebec_2022_10_14.txt")
+newbrunswick_data <- read_tsv("data/007_NewBrunswick_2022_10_14.txt")
+novascotia_data <- read_tsv("data/008_Nova_Scotia_2022_10_15.txt")
+newflab_data <- read_tsv("data/009_Newfoundland_Labradour_2022_10_15.txt")
+yukon_data <- read_tsv("data/010_Yukon_2022_10_15.txt")
+nwt_data <- read_tsv("data/011_NWT_2022_10_15.txt")
+nunavut_data <- read_tsv("data/012_Nunavut_2022_10_15.txt")
 
 # Combine them all into one data set ###
 canada_data <- rbind(britishcolumbia_data, alberta_data)
@@ -35,5 +35,5 @@ rm(canada_data10)
 rm(alberta_data,britishcolumbia_data,manitoba_data,newbrunswick_data,newflab_data,novascotia_data,nwt_data,ontario_data,quebec_data,saskatchewan_data,yukon_data)
 
 # Save as tsv
-write_tsv(x = canada_data, "D:/R/InsectsArctic/data/canada_data_october.tsv")
-write_tsv(x = nunavut_data, "D:/R/InsectsArctic/data/nunavut_data_october.tsv")
+write_tsv(x = canada_data, "data/canada_data.tsv")
+write_tsv(x = nunavut_data, "data/nunavut_data.tsv")
