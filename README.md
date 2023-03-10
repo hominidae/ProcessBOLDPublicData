@@ -14,7 +14,3 @@ WARNING: Depending on the number of specimens in that search, the download could
 Just put those downloaded data sets into a "data" directory and change the name for the selected search terms you've used in the "001_FixPublicData.r" file.
 
 You'll need to install Tidyverse using install.packages("tidyverse") command in R or R Studio.
-
-### 001_FixPublicData.R
-
-This script loads the data itself and saves it as a TSV file.
